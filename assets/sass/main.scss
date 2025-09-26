@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*CSS Table Of Content Starts Here*/
+
+/*============================================ 
+# Template Name: Marijuana
+# Version: 1.0
+# Date: 00/00/2023
+# Author: gramentheme
+# Author URI: .....
+# Description: Marijuana - Medicine HTML Templates
+============================================*/
+
+/*======== Scss Compiles =========
+# mixin
+# variables
+# Typography
+# button 
+# animation
+# banner
+# blog
+# header
+# section
+# footer
+============================================*/
+
+/*CSS Table Of Content Ends Here*/
+
+//>> Abs <<//	
+    @import "_abstracts/_mixins";
+    //>> Abstracts / mixins <<//	
+    @import "_abstracts/_variables";
+    //>> Abstracts / variables <<//
+//>> Abs <<//	
+
+//>> Base <<//
+    @import "_base/_typography";
+    //>> Base / typography <<//
+    @import "_base/_responsive";
+    //>> Base / _responsive <<//
+//>> Base <<//
+
+//>> Components <<//
+@import "_components/_buttons";
+//>> Conponents / buttons <<//
+//>> Components <<//
+ 
+//>> Layout <<//
+    @import "_layout/_header";
+    //>> Layout / header <<//
+    @import "_layout/_banner";
+    //>> Layout / banner <<//
+    @import "_layout/_about";
+    //>> Layout / _about <<//
+    
+    @import "_layout/_feature";
+    //>> Layout / feature <<//
+    @import "_layout/_team";
+    //>> Layout /team <<//
+    @import "_layout/_service";
+    //>> Layout /_service <<//
+    @import "_layout/_section";
+    //>> Layout /service <<//
+    @import "_layout/_Pricing";
+    //>> Layout /_Pricing <<//
+    @import "_layout/_blog";
+    //>> Layout /_blog <<//
+    @import "_layout/_happy";
+    //>> Layout /_happy <<//
+    @import "_layout/_story";
+    //>> Layout /_story <<//
+    @import "_layout/_feature";
+    //>> Layout /_feature <<//
+    @import "_layout/_portfolio";
+    //>> Layout /_portfolio <<//
+    @import "_layout/_choose";
+    //>> Layout /_choose <<//
+    @import "_layout/_contact";
+    //>> Layout /_contact <<//
+    @import "_layout/_appoinment";
+    //>> Layout /_appoinment <<//
+    @import "_layout/_shop";
+    //>> Layout /_shop <<//
+    @import "_layout/_counter";
+    //>> Layout /_counter <<//
+    @import "_layout/_footer";
+    //>> Layout /_footer <<//
+//>> Layout <<//
+
+

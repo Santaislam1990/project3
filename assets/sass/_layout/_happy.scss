@@ -1,0 +1,73 @@
+.client-section{
+    .client-items {
+        position: relative;
+            display: grid;
+            position: relative;
+            z-index: 0;
+        &:before {
+            content: "";
+            pointer-events: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            -webkit-transition: inherit;
+            transition: inherit;
+            background-color:var(--theme);
+            background-image: linear-gradient(20deg, rgba(0,0,0,0.5), transparent);
+        }
+        .image-wrapper{
+            grid-area: 1 / -1;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            margin-bottom: 0 !important;
+            overflow: hidden;
+            text-align: center;
+            &:before {
+                content: "";
+                height: 100%;
+                pointer-events: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                z-index: 0;
+                -webkit-transition: inherit;
+                transition: inherit;
+                background-color: var(--wdt-elementor-color-accent);
+                background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.5), transparent);
+            }
+            .client-image{
+                &:after {
+                    background-color: var(--theme);
+                    content: "";
+                    height: auto;
+                    pointer-events: none;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    opacity: 0.25;
+                    padding-top: 0;
+                    width: 0;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    -webkit-transition: all 0.3s ease-in-out 0.15s;
+                    transition: all 0.3s ease-in-out 0.15s;
+                }
+            }
+        }
+        .client-icon{
+            grid-area: 1 / -1;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            margin-bottom: 0 !important;
+            overflow: hidden;
+            text-align: center;
+        }
+    }
+    
+}

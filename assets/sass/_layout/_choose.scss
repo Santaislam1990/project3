@@ -1,0 +1,151 @@
+/*========== why-choose Scetion End ==========*/
+.why-choose-section{
+  background-color:var(--black-color);
+      .choose-image{
+          background-image: url(../../assets/image//choose/choose-image.jpg);
+           background-size: cover;
+          background-repeat: no-repeat;
+          background-position: top center;
+          padding: 408px 31px 480px 0;
+          @include breakpoint(max-xxl){
+              padding: 480px 31px 482px 0;
+          }
+         
+      }
+  .choose-items{
+    padding-left: 40px;
+    @include breakpoint(max-xl){
+      padding:40px ;
+  }
+    .choose-top{
+      .head-container{
+        border:1px solid var(--pra);
+        border-radius: 50px;
+        width: 200px;
+        text-align: center;
+        margin-bottom:20px;
+        h6{
+          color:var(--theme);
+          
+        }
+  
+      }
+     h2{
+      color: var(--white);
+      margin-bottom: 20px;
+      span{
+        color:var(--theme);
+      }
+     }
+    }
+      .choose-bottom{
+          .choose-item{
+              display: flex;
+              gap:15px;
+              .choose-icon {
+                  background-color:var(--theme);
+                  font-size: 13px !important;
+                  width: 45px;
+                  height: 45px;
+                  line-height: 45px !important;
+                  border-radius: 100%;
+                  padding-top:3px;
+                  text-align: center;
+                  display: inline-block;
+                  margin-top: 8px;
+                  transition: 0.6s;
+                 
+                  i{
+                      font-size: 20px;
+                  }
+              }
+              .choose-cont{
+                  h4{
+                      font-size: 20px;
+                      transition: 0.6s;
+                      text-transform:capitalize;
+                     font-weight: 500;
+                  }
+              }
+          }
+      }
+  }
+}
+/*========== why-choose Scetion End ==========*/
+
+.choose-section{
+  margin-top: -115px;
+    z-index: 999;
+    position: relative;
+  .animation-border {
+    position: relative;
+    z-index: 0;
+  }
+  .choose-part{
+    background-color: var(--black-color);
+    position: relative;
+    padding: 50px;
+    transition: all .6s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .choose-icon{
+      background-color: var(--theme);
+      height:50px;
+      width:50px;
+      line-height: 50px;
+      border-radius: 100%;
+      text-align: center;
+      
+    }
+  
+    .choose-content{
+      position: relative;
+      h5{
+        margin-top: 20px;
+      }
+      p{
+        margin-top: 5px;
+      }
+      .serial-number {
+        position: absolute;
+        right: 0;
+        top: -84px;
+        color: rgba(255, 170, 27, 0.7);
+        font-size: 50px;
+        font-weight: 700;
+      }
+    }
+    
+  }
+  
+}
+    .choose-sections{
+      .section-top h2 {
+        color: var(--white);
+    }
+      background-color:var(--black);
+      .animation-border {
+        position: relative;
+        z-index: 0;
+      }
+      .choose-items{
+       background-color: var(--white);
+       padding: 50px 40px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+        h4,h2,h5{
+          color: var(--black);
+        }
+        &:hover .choose-icon img{
+          animation-name:shake;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1;
+ 
+      }
+      }
+    }
+   
+     
+
+

@@ -1,0 +1,329 @@
+@mixin breakpoint($point) {
+    @if $point==xsmall {
+        @media (min-width: 450px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xxsmall {
+        @media (max-width:450px) {
+            @content ;
+        }
+    }
+    @if $point==xxs {
+        @media (min-width: 470px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xxs {
+        @media (max-width:470px) {
+            @content ;
+        }
+    }
+    @if $point==xs {
+        @media (min-width: 500px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xs {
+        @media (max-width: 500px) {
+            @content ;
+        }
+    }
+    @if $point==sm {
+        @media (min-width: 576px) {
+            @content ;
+        }
+    }
+    @else if $point==max-sm {
+        @media (max-width: 575px) {
+            @content ;
+        }
+    }
+    @else if $point==md {
+        @media (min-width: 768px) {
+            @content ;
+        }
+    }
+    @else if $point==max-md {
+        @media (max-width: 767px) {
+            @content ;
+        }
+    }
+    @else if $point==lg {
+        @media (min-width: 992px) {
+            @content ;
+        }
+    }
+    @else if $point==max-lg {
+        @media (max-width: 991px) {
+            @content ;
+        }
+    }
+    @else if $point==xl {
+        @media (min-width: 1200px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xl {
+        @media (max-width: 1199px) {
+            @content ;
+        }
+    }
+    @else if $point==xxl {
+        @media (min-width: 1400px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xxl {
+        @media (max-width: 1399px) {
+            @content ;
+        }
+    }
+    @else if $point==xxxl {
+        @media (min-width: 1600px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xxxl {
+        @media (max-width: 1600px) {
+            @content ;
+        }
+    }
+    @else if $point==xl4 {
+        @media (min-width: 1899px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xl4 {
+        @media (max-width: 1899px) {
+            @content ;
+        }
+    }
+}
+
+@mixin justify {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+@mixin wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+@mixin flex {
+	display: flex;
+	align-items: center;
+}
+@mixin transition {
+	transition: all 0.4s ease-in-out;
+}
+
+@mixin imgw {
+	width: 100%;
+	height: 100%;
+}
+@mixin gradient{
+	background: linear-gradient(90deg, #1A4DBE 0%, #AE5EBE 100%);
+}
+@mixin bodyfont{
+    font-family: 'Inter', sans-serif;
+}
+@keyframes updown{
+    0% {
+      -webkit-transform: translateX(10px);
+      transform: translateY(0);
+      margin:0;
+      
+    }
+    50% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+      margin-bottom:100px;
+      
+    }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    margin:0;
+    }
+    
+}
+@keyframes left10{
+    0% {
+        -webkit-transform: translateX(10px);
+        transform: translateY(0);
+        margin:0;
+        
+      }
+      50% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+        margin-bottom:100px;}
+        
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            margin:0;
+            }
+    
+}
+@keyframes rotated-style {
+    0% {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+    }
+}
+
+
+@keyframes scale {
+    0% {
+      transform: scale(0.9);
+      -webkit--transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1.08);
+      -webkit--transform: scale(1.08);
+    }
+  }
+
+  @keyframes horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+
+  @keyframes criss-cross-left {
+	0% {
+	  left: -20px;
+	}
+	50% {
+	  left: 50%;
+	  width: 20px;
+	  height: 20px;
+	}
+	100% {
+	  left: 50%;
+	  width: 375px;
+	  height: 375px;
+	}
+  }
+  @keyframes criss-cross-right {
+	0% {
+	  right: -20px;
+	}
+	50% {
+	  right: 50%;
+	  width: 20px;
+	  height: 20px;
+	}
+	100% {
+	  right: 50%;
+	  width: 375px;
+	  height: 375px;
+	}
+}
+@keyframes count-box{
+    0% {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+    50% {
+        -webkit-transform: translateX(10px);
+         transform: translateX(10px);
+    }
+    100% {
+        -webkit-transform: translateX(30px);
+         transform: translateX(30px);
+        }
+}
+@keyframes move2{
+    0% {
+        -webkit-transform: rotate(1deg) translate(2px, 2px);
+        transform: rotate(1deg) translate(2px, 2px);
+    }
+    50% {
+        -webkit-transform: rotate(-1deg) translate(-2px, -2px);
+        transform: rotate(-1deg) translate(-2px, -2px);
+    }
+    100% {
+        -webkit-transform: rotate(1deg) translate(2px, 2px);
+        transform: rotate(1deg) translate(2px, 2px);
+}
+}
+@keyframes marquee-animation {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.animation-border:after,
+.animation-border:before{
+	content: "";
+	height: 4px;
+	width: 0px;  
+	position: absolute; 
+	transition: all 0.5s ease 0s; 
+	z-index: -1; 	
+}
+.animation-border:after { 
+  left: 7px; 
+  bottom: 5px;
+}
+.animation-border:before {
+  right: 7px;
+  top: 5px;
+}
+.animation-border:hover:after,
+.animation-border:hover:before{ 
+	width: 50%; 
+	height:50%;
+	background: var(--theme); 
+}
+@media only screen and ( max-width:767px){
+.animation-border:after { 
+  bottom: 2px; 
+}
+.animation-border:before { 
+  top: 2px; 
+}
+}
+	
+@keyframes shake{
+    16.65% {
+        transform: translateX(5px);
+    }
+    33.3% {
+        transform: translateX(-3px);
+    }
+    49.95% {
+        transform: translateX(4px);
+    }
+    66.6% {
+        transform: translateX(-2px);
+    }
+    83.25% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(0);
+}
+}
+
+
+    

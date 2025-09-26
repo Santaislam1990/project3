@@ -1,0 +1,258 @@
+/*========== Project Section start  ==========*/
+.project-section{
+    .project-wrapper{
+        .main-box{
+            padding: 0;
+            gap: 35px;
+            display: flex;
+            align-items: center;
+            @include breakpoint(max-xl){
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0 30px;
+            }
+            .box {
+                background-image: url(../../assets/image/project/03.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 1;
+                width: 270px !important;
+                height: 544px;
+                position: relative;
+                overflow: hidden;
+                margin-top:30px;
+                transition: all 0.4s ease-in-out;
+                @include breakpoint(max-xl){
+                    width: 570px !important;
+                }
+                @include breakpoint(max-xl){
+                    width: 570px !important;
+                }
+                @include breakpoint(max-sm){
+                    height: 420px;
+                    object-fit: cover;
+                }
+               .project-content {
+                position: relative;
+                padding: 0;
+                width: 100%;
+                border-top: 0;
+                z-index: 11;
+                left: 0;
+                bottom: 0;
+                height: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 0 35px;
+                text-align: left;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: -40px;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    background: rgba(8,15,35,.7);
+                    visibility: hidden;
+                    transition: all 0.4s ease 0s;
+                    transform: rotate( 10deg) scale(1.2);
+                    z-index:9;
+                }
+                    .project-inner{
+                        .title {
+                            font-size: 20px;
+                            line-height: 30px;
+                            font-weight: 600;
+                            margin-bottom: 15px;
+                            a {
+                                color: var(--white);
+                               
+                              }
+                        }
+                        position: absolute;
+                        width: 100%;
+                        transition: .6s;
+                        z-index: 9;
+                        bottom: 6px;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+        
+                    }       
+                    .p-icon {
+                        position: absolute;
+                        transition: 0.6s;
+                        left: 0px;
+                        bottom: 150px;
+                        opacity: 0;
+                        visibility: hidden;
+                        z-index: 11;
+                        @include breakpoint(max-xxl){
+                            bottom:145px;
+                        }
+                        @include breakpoint(max-xl){
+                            bottom:157px;
+                        }
+                        @include breakpoint(max-sm){
+                            bottom:142px;
+                        }
+                        i {
+                            width: 50px;
+                            height: 50px;
+                            border-radius:100%;
+                            background:var(--theme);
+                            line-height: 50px;
+                            text-align: center;
+                            display: block;
+                            &:before {
+                                font-size: 18px;
+                                color: var(--theme);
+                              }
+                        }
+                    } 
+                    
+                &:hover .project-content .project-inner {
+                 bottom: 24px;
+                 opacity: 1;
+                 visibility: visible;
+                } 
+                &:hover .project-content .p-icon{
+                    left: 30px;
+                    opacity: 1;
+                    visibility: visible;
+                } 
+                 
+            }
+            .box-2{
+                background-image: url(../../assets/image/project/project-2.jpg);
+            }
+            .box-3{
+                background-image: url(../../assets/image/project/project-3.jpg);
+            }
+            .box-4{
+                background-image: url(../../assets/image/project/project-4.jpg);
+            }
+            .box-5{
+                background-image: url(../../assets/image/project/project-6.jpg);
+            }
+            .box:hover .project-content:before {
+                opacity: 1;
+                visibility: visible;
+                height: 167px;
+            }
+            .box .project-content .p-icon i:before {
+                color: var(--white);
+            }
+              
+            }
+        }
+        .project-wrapper .main-box .box.active {
+            width: 570px !important;
+            border: 10px solid var(--theme);
+        }
+    }
+.projects-section{
+    background-color: var(--black-color);
+   .project-head{
+    color: var(--white);
+   }
+               
+    .project-wrapper {
+        margin-left: -320px;
+        margin-right: -320px;
+        
+      }
+     .project-img{
+        position: relative;
+        overflow: hidden;
+        border:10px solid var(--white);
+       
+        img {
+            width: 100%;
+          }
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background: linear-gradient(0deg, rgba(18, 19, 21, 0.65) 0%, rgba(18, 19, 21, 0.65) 100%);
+            transition: all 0.4s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+          }
+          .project-content {
+            position: absolute;
+            left: 30px;
+            right: -35px;
+            bottom: -41px;
+            z-index: 9;
+            transition: all 0.4s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            align-items: center;
+            background-color: var(--theme);
+            padding: 25px 75px 25px 54px;
+            border-radius: 10px;
+            display: table;
+            h3 {
+                font-size: 28px;
+                a {
+                    color: var(--white);
+                  }
+              }
+          }
+          
+     }
+     .swiper-slide.swiper-slide-active{
+		.project-img::before {
+            opacity: 1;
+            visibility: visible;
+          }
+           .project-content {
+            opacity: 1;
+            visibility: visible;
+            bottom: 30px;
+          } 
+          .card-btn{
+            animation: slideLeft 400ms;
+          }
+        }
+}
+   
+
+
+/*========== Project Section End  ==========*/
+/*========== Projects details start  ==========*/
+
+.projects-details{
+    .project-d-image{
+        img{
+            width:100%;
+        }
+    }
+    .project-content {
+        margin-top: 20px;
+        p{
+            margin-bottom:20px;
+        }
+        
+    }
+    .project-detail{
+        background-color: var(--theme);
+        padding:15px;
+        h3{
+           text-transform: uppercase;
+        }
+        li{
+            line-height:35px;
+        }
+    }
+}
+/*========== Projects details end  ==========*/
+

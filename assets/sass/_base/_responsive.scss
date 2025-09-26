@@ -1,0 +1,320 @@
+//Main Responsive Start
+//Main Responsive Start
+
+@media screen and (max-width:992px){
+	.top-header {
+		
+		display: none;
+	}
+}
+
+
+
+
+
+					
+
+
+//Global Responsive Start
+
+
+@media screen and (max-width: 767px){
+	
+}
+@media screen and (max-width: 575px){
+	
+}
+@media screen and (max-width: 500px){
+	
+}
+@media screen and (max-width: 420px){
+	
+}
+//Global Responsive End
+
+/*=============== header Start ===============*/
+
+
+/*=============== header end ===============*/
+
+
+
+/*=============== feature Start ===============*/
+@media screen and (max-width:1300px){
+	.feature-image {
+   max-width: 600px;
+}
+}
+@media screen and (max-width:1199px){
+	.feature-image {
+		height:485px;
+	  width: 485px;
+	  }
+	  .feature-top h3 {
+		font-size: 30px;
+		
+	}
+}
+@media screen and (max-width:992px){
+	
+	.feature-section {
+		padding: 80px 0;
+		.feature-image{
+			display:none;
+		}
+	}
+}
+@media screen and (max-width:768px){
+	.feature-section {
+		padding: 60px 0;
+		}
+}
+@media screen and (max-width:480px){
+	.feature-section {
+		padding: 50px 0;
+	}
+}
+/*=============== feature end ===============*/
+
+/*=============== team Start ===============*/
+@media screen and (max-width:992px){
+	.team-section {
+		padding: 100px 0;
+		}
+}
+@media screen and (max-width:768px){
+	.team-section {
+		padding: 80px 0;
+		}
+}
+@media screen and (max-width:660px){
+	.team-section {
+		padding: 50px 0;
+		}
+}
+
+/*=============== team end ===============*/
+/*=============== service start===============*/
+@media screen and (max-width:992px){
+	.service-section {
+		padding: 100px 0;
+		}
+}
+@media screen and (max-width:768px){
+	.service-section {
+		padding: 80px 0;
+		}
+}
+@media screen and (max-width:660px){
+	.service-section {
+		padding: 50px 0;
+		}
+}
+
+/*=============== service end ===============*/
+
+/*=============== pricing start ===============*/
+@media screen and (max-width:992px){
+	.pricing-section {
+		padding: 100px 0;
+		}
+}
+@media screen and (max-width:768px){
+	.pricing-section {
+		padding: 80px 0;
+		}
+}
+@media screen and (max-width:660px){
+	.pricing-section {
+		padding: 50px 0;
+		.pricing-wrap-widget .pricing-table-middle .pricing-icon {
+			width: 300px;
+			height: 300px;
+		}
+	}
+
+		
+}
+
+/*=============== pricing end ===============*/
+
+/*=============== blog start ===============*/
+@media screen and (max-width:992px){
+	.blog-section {
+		padding: 100px 0;
+		}
+}
+@media screen and (max-width:768px){
+	.blog-section {
+		padding: 80px 0;
+		}
+}
+@media screen and (max-width:660px){
+	.blog-section {
+		padding: 50px 0;
+		}
+}
+
+/*=============== blog end ===============*/
+/*=============== pricing start===============*/
+
+
+/*=============== pricing end ===============*/
+
+
+
+/*=============== logo-items-overlay start ===============*/
+@media screen and (max-width:992px){
+	.logo-items-overlay-section {
+		padding: 100px 0;
+		}
+}
+@media screen and (max-width:768px){
+	.logo-items-overlay-section {
+		padding: 80px 0;
+		}
+}
+@media screen and (max-width:660px){
+	.logo-items-overlay-section {
+		padding: 50px 0;
+		}
+}
+
+/*=============== logo-items-overlay end ===============*/
+
+/*=============== footer start ===============*/
+@media screen and (max-width:992px){
+	.footer-section overhid {
+		padding: 100px 0;
+		}
+}
+@media screen and (max-width:768px){
+	.footer-section overhid {
+		padding: 80px 0;
+		}
+}
+@media screen and (max-width:660px){
+	.footer-section overhid {
+		padding: 50px 0;
+		}
+}
+
+/*=============== footer end ===============*/
+
+/*=============== testimonial start ===============*/
+@media screen and (max-width:992px){
+	.testimonial-section {
+		padding: 100px 0;
+		}
+}
+@media screen and (max-width:768px){
+	.testimonial-section {
+		padding: 80px 0;
+		}
+}
+@media screen and (max-width:660px){
+	.testimonial-section {
+		padding: 50px 0;
+		}
+}
+
+/*=============== footer end ===============*/
+
+/*=============== error Start ===============*/
+@media screen and (max-width:992px){
+	.error-content h1{
+		font-size: 35px;
+	}
+}
+@media screen and (max-width:768px){
+	.error-content h1 {
+		font-size: 30px;
+		}
+}
+@media screen and (max-width:660px){
+	.error-content h1 {
+		font-size: 25px;
+		line-height:30px;
+		
+		}
+}
+@media screen and (max-width:480px){
+	.error-content h1 {
+		font-size: 20px;
+		
+	}
+}
+
+
+	
+/*=============== pricing end ===============*/
+
+/*=============== Schedule Start ===============*/
+@media screen and (max-width: 1199px) {
+	.schedule__section{
+	  .table__content {
+		max-width: 100%;
+		overflow-x: auto;
+		.table__box{
+		  .table__wrapper {
+			min-width: 1000px;
+			table{
+			 tbody{
+			  tr{
+				th{
+				  padding: 20px 20px;
+				  font-size: 20px;
+				}
+				td{
+				  padding: 20px 20px;
+				  h6{
+					font-size: 18px;
+				  }
+				  p{
+					font-size: 14px;
+				  }
+				}
+			  }
+			 }
+			}
+		  }
+		}
+	  }    
+	}
+}
+/*=============== Schedule End ===============*/
+@media screen and (max-width:992px){
+	.cart-section{
+		table, thead, tbody, td, tr {
+			display: block;
+			
+		}
+			.quantity {
+			display: block;
+			padding: 10px 0;
+			justify-content: center;
+			
+		}
+		td h6{
+			padding:15px 0;
+		}
+		.shop-cart-area table tbody td .quantity input[type=number] {
+			width: 14%;
+		}
+		 .shop-coupon-code {
+			
+			margin-bottom: 28px;
+		}
+	}
+}
+@media screen and (max-width:400px){
+	.shop-section  .s-discount-code input {
+		
+		padding: 11px 4px;
+	}
+}
+
+
+
+
+/*========== Team Section Start ==========*/

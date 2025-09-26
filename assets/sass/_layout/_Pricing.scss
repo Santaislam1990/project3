@@ -1,0 +1,109 @@
+
+.pricing-section{
+       background-color: var(--background);
+    .section-top h4{
+        color:var(--theme)
+    }
+    .pricing-wrapper {
+        position: relative;
+        overflow: hidden;
+        background: var(--white);
+        box-shadow: 0 0.2rem 2.8rem rgba(36, 36, 36, 0.01);
+        &:hover{
+             .pricing-table .pricing-icon img {
+                opacity: 1;
+              }
+        }
+        &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 196px;
+                background:var(--black-color);
+                border-radius: 8px 0 0 0;
+               
+        }
+        .pricing-table {
+            padding: 40px;
+            border-radius: 5px;
+            .pricing-table-header {
+                position: relative;
+                .table-title {
+                    font-size: 22px;
+                    line-height: 32px;
+                    margin: 0 0 30px;
+                }
+                .pricing-box {
+                    line-height: .66;
+                    display: flex;
+                    margin-bottom: 30px;
+                    .pricing-currency {
+                        font-size: 22px;
+                        font-weight: 500;
+                        color:var(--white);
+                    }
+                    .table-price-text {
+                        font-size: 52px;
+                        font-weight: 400;
+                        color: var(--white);
+                    }
+                    .table-period {
+                        display: flex;
+                        align-items: flex-end;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: var(--white);
+                    }
+                }
+            }
+            .pricing-icon {
+                position: absolute;
+                right: -48%;
+                top: 8%;
+                padding-left: 30px;
+                padding-top: 30px;
+                border: 8px solid var(--theme);
+                background: var(--white);
+                width: 300px;
+                height: 300px;
+                transform: rotate(-45deg);
+                img {
+                    transform: rotate(45deg);
+                    opacity: 0.2;
+                    transition: 0.6s;
+                    width: 98px;
+                    height: 100px;
+                }
+            }
+            
+            .pricing-table-body {
+                position: relative;
+                z-index: 9;
+                padding-top: 64px;
+                ul li {
+                    padding:10px 0px;
+                    i {
+                        font-size: 16px;
+                        padding-right: 12px;
+                        color:var(--black-color);
+                    }
+                    span {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color:var(--text);
+                    }
+                }
+            }
+        }
+        
+    }
+    .pricing-wrapper.head{
+        &::before{
+            background:var(--theme);
+            
+        }
+    }
+    
+}

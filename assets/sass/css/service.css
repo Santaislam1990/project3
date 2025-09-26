@@ -1,0 +1,40 @@
+.service-section .service-image {
+  position: relative;
+}
+.service-section .service-image .dot {
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: up-down 6s ease-out infinite;
+}
+@media screen and (max-width: 575px) {
+  .service-section .service-image .dot {
+    display: none;
+  }
+}
+.service-section .service-image .dot2 {
+  width: 60px;
+  height: 120px;
+  position: absolute;
+  bottom: -400px;
+  right: 0;
+  animation: left-right 6s ease-out infinite;
+}
+@media screen and (max-width: 575px) {
+  .service-section .service-image .dot2 {
+    display: none;
+  }
+}
+.service-section .service-items h4 {
+  color: var(--theme);
+}
+.service-section .service-items h2 {
+  color: var(--black);
+  margin-top: 10px;
+}
+.service-section .service-items p {
+  margin-top: 15px;
+  line-height: 25px;
+}/*# sourceMappingURL=service.css.map */
